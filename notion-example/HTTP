@@ -1,0 +1,2 @@
+GET /v1/pages/b55c9c91-384d-452b-81db-d1ef79372b75 HTTP/1.1
+Authorization: Bearer {MY_NOTION_TOKEN}
