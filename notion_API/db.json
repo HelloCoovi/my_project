@@ -5,7 +5,7 @@
       "object": "page",
       "id": "4e7a0166-89f2-44d7-a358-50d4ed8c4ed1",
       "created_time": "2022-10-16T03:28:00.000Z",
-      "last_edited_time": "2022-10-16T03:29:00.000Z",
+      "last_edited_time": "2022-10-22T08:32:00.000Z",
       "created_by": {
         "object": "user",
         "id": "fdb0f1dd-5cfd-4a9b-9296-94ec8a9601b9"
@@ -22,14 +22,76 @@
       },
       "archived": false,
       "properties": {
-        "역할": {
+        "이메일": {
+          "id": "%3DVuh",
+          "type": "email",
+          "email": "jangg0627@naver.com"
+        },
+        "날자": {
+          "id": "GN%7B%3B",
+          "type": "date",
+          "date": {
+            "start": "2022-10-14",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "건강": {
+          "id": "Hfy%5D",
+          "type": "status",
+          "status": {
+            "id": "c30b6dc0-f1e2-459f-894c-a6b46ae8aa9b",
+            "name": "건강함",
+            "color": "blue"
+          }
+        },
+        "선택": {
+          "id": "IB%3AQ",
+          "type": "select",
+          "select": {
+            "id": "b6c7a3eb-c701-4c79-943a-ebcc31a757d2",
+            "name": "파릇파릇",
+            "color": "blue"
+          }
+        },
+        "다중 선택": {
+          "id": "Q%5BEV",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "53440e5f-2991-40b7-a7ca-4d6b6f852462",
+              "name": "지능",
+              "color": "pink"
+            }
+          ]
+        },
+        "파일과 미디어": {
+          "id": "RCRt",
+          "type": "files",
+          "files": [
+            {
+              "name": "스크린샷 2022-10-21 오후 5.43.54.png",
+              "type": "file",
+              "file": {
+                "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/32b0dcd2-eb8e-4586-b6db-eb7b387dbf3a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-10-21_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.43.54.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221022%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221022T083225Z&X-Amz-Expires=3600&X-Amz-Signature=0e024bb960c8cd3c23f270924b12973f6087c574abfe7b04cc0a057346414ecc&X-Amz-SignedHeaders=host&x-id=GetObject",
+                "expiry_time": "2022-10-22T09:32:25.872Z"
+              }
+            }
+          ]
+        },
+        "나이": {
           "id": "UnZ%5B",
+          "type": "number",
+          "number": null
+        },
+        "직업": {
+          "id": "X%3F%3B%7B",
           "type": "rich_text",
           "rich_text": [
             {
               "type": "text",
               "text": {
-                "content": "교육",
+                "content": "똑똑한 유치원생",
                 "link": null
               },
               "annotations": {
@@ -40,10 +102,41 @@
                 "code": false,
                 "color": "default"
               },
-              "plain_text": "교육",
+              "plain_text": "똑똑한 유치원생",
               "href": null
             }
           ]
+        },
+        "사람": {
+          "id": "%5CFCH",
+          "type": "people",
+          "people": [
+            {
+              "object": "user",
+              "id": "fdb0f1dd-5cfd-4a9b-9296-94ec8a9601b9",
+              "name": "RO둘기 ",
+              "avatar_url": null,
+              "type": "person",
+              "person": {
+                "email": "jangg06270@gmail.com"
+              }
+            }
+          ]
+        },
+        "전화번호": {
+          "id": "%5DsDr",
+          "type": "phone_number",
+          "phone_number": "010-8803-5510"
+        },
+        "체크박스": {
+          "id": "_Jro",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "URL": {
+          "id": "mVeL",
+          "type": "url",
+          "url": "https://coovi.notion.site/8ee490e3938c418e961b1cd5eecc43a8?v=5ec265af94fe459b9f580bd2c1552cab"
         },
         "이름": {
           "id": "title",
@@ -52,7 +145,7 @@
             {
               "type": "text",
               "text": {
-                "content": "아이펠",
+                "content": "철수",
                 "link": null
               },
               "annotations": {
@@ -63,7 +156,7 @@
                 "code": false,
                 "color": "default"
               },
-              "plain_text": "아이펠",
+              "plain_text": "철수",
               "href": null
             }
           ]
@@ -75,7 +168,7 @@
       "object": "page",
       "id": "694e6c46-481d-4d9b-9ab8-62aed2da9657",
       "created_time": "2022-10-16T03:28:00.000Z",
-      "last_edited_time": "2022-10-20T07:46:00.000Z",
+      "last_edited_time": "2022-10-21T17:42:00.000Z",
       "created_by": {
         "object": "user",
         "id": "fdb0f1dd-5cfd-4a9b-9296-94ec8a9601b9"
@@ -92,14 +185,68 @@
       },
       "archived": false,
       "properties": {
-        "역할": {
+        "이메일": {
+          "id": "%3DVuh",
+          "type": "email",
+          "email": "jangg0627@gmail.com"
+        },
+        "날자": {
+          "id": "GN%7B%3B",
+          "type": "date",
+          "date": {
+            "start": "2022-11-05T00:00:00.000+09:00",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "건강": {
+          "id": "Hfy%5D",
+          "type": "status",
+          "status": null
+        },
+        "선택": {
+          "id": "IB%3AQ",
+          "type": "select",
+          "select": {
+            "id": "013ee843-54b2-4747-b26a-91eb3c61a9a0",
+            "name": "비실비실",
+            "color": "orange"
+          }
+        },
+        "다중 선택": {
+          "id": "Q%5BEV",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "a2ce31ca-faec-451c-9fbf-851c535c35e3",
+              "name": "멍청",
+              "color": "yellow"
+            },
+            {
+              "id": "72f66e0b-d157-467a-ad13-347ba5a05708",
+              "name": "지방",
+              "color": "gray"
+            }
+          ]
+        },
+        "파일과 미디어": {
+          "id": "RCRt",
+          "type": "files",
+          "files": []
+        },
+        "나이": {
           "id": "UnZ%5B",
+          "type": "number",
+          "number": 25
+        },
+        "직업": {
+          "id": "X%3F%3B%7B",
           "type": "rich_text",
           "rich_text": [
             {
               "type": "text",
               "text": {
-                "content": "연구",
+                "content": "무직백수",
                 "link": null
               },
               "annotations": {
@@ -110,10 +257,41 @@
                 "code": false,
                 "color": "default"
               },
-              "plain_text": "연구",
+              "plain_text": "무직백수",
               "href": null
             }
           ]
+        },
+        "사람": {
+          "id": "%5CFCH",
+          "type": "people",
+          "people": [
+            {
+              "object": "user",
+              "id": "fdb0f1dd-5cfd-4a9b-9296-94ec8a9601b9",
+              "name": "RO둘기 ",
+              "avatar_url": null,
+              "type": "person",
+              "person": {
+                "email": "jangg06270@gmail.com"
+              }
+            }
+          ]
+        },
+        "전화번호": {
+          "id": "%5DsDr",
+          "type": "phone_number",
+          "phone_number": null
+        },
+        "체크박스": {
+          "id": "_Jro",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "URL": {
+          "id": "mVeL",
+          "type": "url",
+          "url": "https://coovi.notion.site/8ee490e3938c418e961b1cd5eecc43a8?v=5ec265af94fe459b9f580bd2c1552cab"
         },
         "이름": {
           "id": "title",
@@ -122,7 +300,7 @@
             {
               "type": "text",
               "text": {
-                "content": "모두연",
+                "content": "윤태",
                 "link": null
               },
               "annotations": {
@@ -133,7 +311,7 @@
                 "code": false,
                 "color": "default"
               },
-              "plain_text": "모두연",
+              "plain_text": "윤태",
               "href": null
             }
           ]
@@ -145,7 +323,7 @@
       "object": "page",
       "id": "ac8bd11e-1ed5-485d-85d2-a4bb4d9299da",
       "created_time": "2022-10-16T03:28:00.000Z",
-      "last_edited_time": "2022-10-16T03:29:00.000Z",
+      "last_edited_time": "2022-10-21T17:42:00.000Z",
       "created_by": {
         "object": "user",
         "id": "fdb0f1dd-5cfd-4a9b-9296-94ec8a9601b9"
@@ -162,14 +340,67 @@
       },
       "archived": false,
       "properties": {
-        "역할": {
+        "이메일": {
+          "id": "%3DVuh",
+          "type": "email",
+          "email": "jaja2578@naver.com"
+        },
+        "날자": {
+          "id": "GN%7B%3B",
+          "type": "date",
+          "date": {
+            "start": "2022-10-10T00:00:00.000+09:00",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "건강": {
+          "id": "Hfy%5D",
+          "type": "status",
+          "status": {
+            "id": "8f25df96-57a2-47a3-a977-b7b762724403",
+            "name": "팔팔함",
+            "color": "green"
+          }
+        },
+        "선택": {
+          "id": "IB%3AQ",
+          "type": "select",
+          "select": {
+            "id": "c02be9d6-d162-45d9-8bae-c4bd759f07fa",
+            "name": "또랑또랑",
+            "color": "default"
+          }
+        },
+        "다중 선택": {
+          "id": "Q%5BEV",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "b1f4834b-90f9-45db-aa4d-34f758bec408",
+              "name": "\b미모",
+              "color": "orange"
+            }
+          ]
+        },
+        "파일과 미디어": {
+          "id": "RCRt",
+          "type": "files",
+          "files": []
+        },
+        "나이": {
           "id": "UnZ%5B",
+          "type": "number",
+          "number": 12
+        },
+        "직업": {
+          "id": "X%3F%3B%7B",
           "type": "rich_text",
           "rich_text": [
             {
               "type": "text",
               "text": {
-                "content": "강사",
+                "content": "유치원생",
                 "link": null
               },
               "annotations": {
@@ -180,10 +411,41 @@
                 "code": false,
                 "color": "default"
               },
-              "plain_text": "강사",
+              "plain_text": "유치원생",
               "href": null
             }
           ]
+        },
+        "사람": {
+          "id": "%5CFCH",
+          "type": "people",
+          "people": [
+            {
+              "object": "user",
+              "id": "fdb0f1dd-5cfd-4a9b-9296-94ec8a9601b9",
+              "name": "RO둘기 ",
+              "avatar_url": null,
+              "type": "person",
+              "person": {
+                "email": "jangg06270@gmail.com"
+              }
+            }
+          ]
+        },
+        "전화번호": {
+          "id": "%5DsDr",
+          "type": "phone_number",
+          "phone_number": "1010-1231-123"
+        },
+        "체크박스": {
+          "id": "_Jro",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "URL": {
+          "id": "mVeL",
+          "type": "url",
+          "url": "https://coovi.notion.site/8ee490e3938c418e961b1cd5eecc43a8?v=5ec265af94fe459b9f580bd2c1552cab"
         },
         "이름": {
           "id": "title",
@@ -192,7 +454,7 @@
             {
               "type": "text",
               "text": {
-                "content": "인천 미래채움",
+                "content": "영희",
                 "link": null
               },
               "annotations": {
@@ -203,7 +465,7 @@
                 "code": false,
                 "color": "default"
               },
-              "plain_text": "인천 미래채움",
+              "plain_text": "영희",
               "href": null
             }
           ]

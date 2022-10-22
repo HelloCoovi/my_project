@@ -1,40 +1,73 @@
 import requests, json
+from notion_function import read_database
 
 token = "secret_cALvUPsYarLSYBn4TKTMd7zfodIgHPMl5M8AMscAmjx"
-
 database_id = "8ee490e3938c418e961b1cd5eecc43a8"
 
-headers = {
-    "Authorization": "Bearer " + token,
-    "Notion-Version": "2022-06-28"
-}
+# choice_func = input("어떤 작업을 하시겠습니까?\n 데이터를 읽으려면 'r'\n 새로운 데이터를 추가하려면 'n'\n  -> ")
 
-def read_database(database_id, headers):
-    read_url = f"https://api.notion.com/v1/databases/{database_id}/query"
+# if choice_func == 'r':
+#     read_database(database_id, token)
 
-    res = requests.request("POST", read_url, headers=headers)
-    data = res.json()
+read_database(database_id, token)
+
+
+
+
+
+
+def create_page(database_id, token, page_values):
+    headers = {
+        "Authorization": "Bearer " + token,
+        "Content-Type": "application/json",
+        "Notion-Version": "2022-02-22"
+    }
+
+    created_url = "https://api.notion.com/v1/pages"
+
+    new_page_data = {
+        "parent": {"database_id": database_id},
+        "properties": {
+            "이름": {
+                "title": [
+                    {
+                        "text": {
+                            "content": page_values['이름']
+                        }
+                    }
+                ]
+            },
+            "역할": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": page_values['역할']
+                        }
+                    }
+                ]
+            }
+        }
+    }
+
+    data = json.dumps(new_page_data)
+
+    res = requests.post(created_url, headers=headers, data=data)
+
     print(res.status_code)
 
-    # json 파일 확인용 저장 코드(실행시 db.json으로 파일 생성)
-    # with open("./db.json", "w", encoding="utf8") as f:
-    #     json.dump(data, f, indent=2, ensure_ascii=False)
 
-    if res.status_code == 200:
-        try:
-            for i in data["results"]:
-                col1 = i["properties"]["이름"]["title"][0]["text"]["content"]
-                col2 = i["properties"]["역할"]["rich_text"][0]["text"]["content"]
-                print(f"{col1} 소속: {col2}")
+page_values = {
+    '이름': '도지',
+    '역할': '기간제 강사'
+}
 
-        except:
-            print(f"status code가 200이 아닙니다 현재 status code: {res.status_code}")
-
-def create_page():
-    pass
 
 def update_page():
     pass
 
+# read_database(database_id, headers)
 
-read_database(database_id, headers)
+
+
+
+# create_page(database_id, page_values)
